@@ -1,0 +1,10 @@
+.. link: 
+.. description: Blog Introduction
+.. tags: 
+.. date: 2013/11/17 19:15:11
+.. title: Welcome to my Blag
+.. slug: welcome-to-my-blag
+
+Going to be just posting random stuff to try to keep me motivated on the pointless stuff I do in my life.
+
+Currently my main focus is computers and Speedrunning, I also intend to learn how to write code that isn't terrible.
