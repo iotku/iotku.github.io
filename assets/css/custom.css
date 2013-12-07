@@ -1,0 +1,33 @@
+body {
+    background-color: #111111 !important;
+    color: white;
+}
+
+a {
+	color: #C80000;
+}
+
+a:hover {
+	color: #E60000;
+}
+
+#tipue_search_content {
+    background-color: #222;
+    color: white;
+}
+
+.tipue_search_content_text, #tipue_search_results_count {
+    color: white !important:
+}
+
+#tipue_search_warning, #tipue_search_warning_head {
+    color: red !important;
+}
+
+#tipue_search_content a,#tipue_search_content a:hover {
+    color: green;
+}
+
+input[type=text] {
+    border-radius: 1em !important;
+}
