@@ -6,37 +6,27 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://iotku.pw/</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/2013/</loc>
-  <lastmod>2013-12-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://iotku.pw/2013/index.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/archive.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/categories/</loc>
-  <lastmod>2013-12-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://iotku.pw/categories/index.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/categories/irl-stuff.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,47 +36,32 @@
  </url>
  <url>
   <loc>http://iotku.pw/categories/speedrunning.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/galleries/</loc>
-  <lastmod>2013-12-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://iotku.pw/galleries/index.html</loc>
-  <lastmod>2013-12-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://iotku.pw/index.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/listings/</loc>
-  <lastmod>2013-12-05</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://iotku.pw/listings/index.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/posts/happy-thanksgiving.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/posts/version-differences-and-comparisons.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://iotku.pw/posts/welcome-to-my-blag.html</loc>
-  <lastmod>2013-12-05</lastmod>
+  <lastmod>2013-12-07</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
