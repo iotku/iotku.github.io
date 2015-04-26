@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GV-USB2 English Setup Guide</title>
+</head>
+<style type="text/css">
+	body {
+		font-family: helvetica, sans-serif;
+		font-size: 1.1em;
+
+	}
+	img {
+		border: black 2px solid;
+	}
+	#container {
+		max-width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	header {
+		width: 100%;
+		text-align: center;
+		background-color: black;
+		font-size: 1.5em;
+		color: white;
+	}
+	a,a:link,a:visited {
+		color: blue;
+		font-weight: bold;
+	}
+	header a,a:link,a:visited  {
+		color: orange;
+		font-weight: bold;
+	}
+</style>
+<body>
+<header style="margin: 0; padding: 0; border: 0;">GV-USB2 English Setup Guide<br/>by <a href="http://twitter.com/iotku">@iotku</a> (Follow me on twitter it really helps me out.)</header>
+<div id="container">
+<p>In this guide I'm going to show you how to setup drivers and AmarecTV for the GV-USB2 capture device.</p>
+<h2>Driver Install</h2>
+<h3>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</h3>
+<p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
+
+	<ol>
+		<li>Once we've loaded the CD (Auto-run or opened GVUSB2.exe manually), click the right of the 2 large blue buttons</li>
+		<img src="images/cd01.png"/>
+		<li>Now click the first blue button marked with a 1</li>
+		<img src="images/cd02.png"/>
+		<li>Click next a few times to get through the driver installation and you're done with this step!</li>
+		<img src="images/dinstall.png"/>
+	</ol>
+<h3>If you don't have a CD (or disk drive) and need the drivers <a href="http://www.iodata.jp/lib/script/clib.php?code=gvusb2_110.exe">you can get them here.</a></h3>
+	<ol>
+		<img src="images/gvdownload.png"/>
+		<li>You will see a text box to the right of "S/N", this page asks you for your serial number of your device in order to download the drivers. The serial number should be printed on your GV-USB2.</li>
+		<li>Enter your Serial Number in the text field</li>
+		<li>Click the "ダウンロード" ("Download") button to download the driver "gvusb2_110.exe" and run it</li> 
+		<li>Click next a few times to get through the driver installation and you're done with this step!</li>
+		<img src="images/dinstall.png"/>
+	</ol>
+<h2>LAGS Codec Installation</h2>
+<p>Assuming you're going to record with AmarecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
+<p>LAGS is a lossless codec which means filesizes are a fairly large, make sure you have a lot of free storage space!</p>
+<p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
+<ol>
+	<li><a href="http://lags.leetcode.net/LagarithSetup_1327.exe">Get LAGS Here.</a></li>
+	<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
+	<li>LAGS should be installed, you're done with this step.</li>
+</ol>
+<h2>AmarecTV Setup</h2>
+<p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmarecTV's Live output for the ability to simultaneously stream and record lossless video via AmarecTV.</p>
+
+<ol>
+	<li>Download the <a href="http://www.amarectv.com/download_amarectv.htm">latest AmarecTV Here.</a> (Click "<a href="http://www.amarectv.com/download/amarectv310.zip">ダウンロード</a>")</li>
+	<li>Unzip the folder to location of your choosing.</li>
+	<li>Run "live_setup300.exe" from the folder you unzipped. (Text May be Garbled if you're not using the Japanese Locale, but should install just fine)</li>
+	<li>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</li>
+</ol>
+<p>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</p>
+<p>You should be greeted with a dialog asking you to change your settings (If not, right click in the blank area and click "config")</p>
+<h3>"General" Tab</h3>
+<img src="images/amageneral.png"/>
+<ol>
+	<li>Set "Path" to where you want your recordings to be saved to</li>
+	<li>Make sure "Language" is set to "English"
+</ol>
+<h3>"Device" Tab</h3>
+<img src="images/amadevice.png"/>
+<ol>
+	<li>Set "Video Capture Device" to "GV-USB2, Analog Capture" and make sure "Use Clock" is checked</li>
+	<li>Set "Input" to either "Composite" or "S-Video" (Depending on what input you're using)</li>
+	<li>Set "Format" to "*w= 720, h= 480, fps=29.97,  fcc=YUY2, bit=16" (We're going to be setting the aspect ratio later and in post production for recordings)</li>
+	<li>Set "Audio Capture Device" to "GV-USB2, Analog WaveIn"
+	<li>Enter "Device Setting" and ensure "VID INPUT" is the same input as you set in Amarec</li>
+</ol>
+<img src="images/gv1.png"/>
+<h3>"Graph 2(Preview)" Tab</h3>
+<img src="images/amapreview.png"/>
+<ol>
+	<li>Set "Aspect Ratio" to 4:3 for most SD games (PS2/GCN and below are generally 4:3) or 16:9 if playing a newer game or playing a game with a 16:9 option enabled</li>
+	<li>Set "Deinterlacing" to "Top field first"</li>
+	<li>Set "Function" to "for Retro Game" for old (240p) games or "for Role-playing Game" for most newer/hi-res games (480i+)</li>
+</ol>
+<h3>"Graph 3(Live)" tab</h3>
+<img src="images/amalive.png"/>
+<ol>
+	<li>Make sure "Live Enable" is checked</li>
+	<li>Set "Framerate" to "30fps" for 30fps games, or "60fps" for 60fps games</li>
+	<li>Set "Resize" to "640 * 480" for 4:3 games, or "720 * 480" for 16:9 games</li>
+</ol>
+<h3>"Recording" tab</h3>
+<img src="images/amarecording.png"/>
+<ol>
+	<li>Set "Framerate" to either 999 or 30 (Should result in 29.97fps recordings regardless)</li>
+	<li>Set "Filter Processing" to "Filter Off"</li>
+	<li>Set "Video Compressor" to "Other Codec"</li>
+	<li>Click "Update Codec List"</li>
+	<li>Select "LAGS Lagarith" from the list above</li>
+</ol>
+<h3>"Hotkey" tab</h3>
+<p>Personally, I disable hot-keys so I don't accidentally stop a recording.</p>
+<img src="images/amahotkey.png"/>
+<ol><li>Disable "Use Hotkey" check-box</li>
+<li>You can finally exit the config by clicking "OK"</li>
+</ol>
+<p>Amarec has a lot of settings, but you should only have to configure it once thankfully.</p>
+<h1>Using AmarecTV with streaming software</h1>
+<img src="images/obs1.png"/>
+<img src="images/obs2.png"/>
+<img src="images/obs3.png"/>
+<img src="images/obs5.png"/>
+<ol><li>Create a Video Capture Source ("Video Capture Device" in OBS)</li>
+	<li>Select "AmaRec Video Capture"</li>
+	<li>Select "AmaRec Audio Capture" as the audio device</li>
+</ol>
+</div>
+</body>
+</html>
