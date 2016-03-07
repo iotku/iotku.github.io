@@ -38,7 +38,7 @@
 <header style="margin: 0; padding: 0; border: 0;">GV-USB2 English Setup Guide<br/>by <a href="http://twitter.com/iotku">@iotku</a> (Follow me on twitter it really helps me out.)</header>
 <div id="container">
 <p>In this guide I'm going to show you how to setup drivers and AmarecTV for the GV-USB2 capture device.</p>
-<h2>Driver Install</h2>
+<h2 id="DriverInstall">Driver Install</h2>
 <h3>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</h3>
 <p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
 
@@ -59,7 +59,7 @@
 		<li>Click next a few times to get through the driver installation and you're done with this step!</li>
 		<img src="images/dinstall.png"/>
 	</ol>
-<h2>LAGS Codec Installation</h2>
+<h2 id="InstallCodec">LAGS Codec Installation</h2>
 <p>Assuming you're going to record with AmarecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
 <p>LAGS is a lossless codec which means filesizes are a fairly large, make sure you have a lot of free storage space!</p>
 <p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
@@ -68,7 +68,7 @@
 	<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
 	<li>LAGS should be installed, you're done with this step.</li>
 </ol>
-<h2>AmarecTV Setup</h2>
+<h2 id="AmarecSetup">AmarecTV Setup</h2>
 <p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmarecTV's Live output for the ability to simultaneously stream and record lossless video via AmarecTV.</p>
 
 <ol>
@@ -79,13 +79,13 @@
 </ol>
 <p>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</p>
 <p>You should be greeted with a dialog asking you to change your settings (If not, right click in the blank area and click "config")</p>
-<h3>"General" Tab</h3>
+<h3 name"AmarecGeneralTab">"General" Tab</h3>
 <img src="images/amageneral.png"/>
 <ol>
 	<li>Set "Path" to where you want your recordings to be saved to</li>
 	<li>Make sure "Language" is set to "English"
 </ol>
-<h3>"Device" Tab</h3>
+<h3 id="AmarecDeviceTab">"Device" Tab</h3>
 <img src="images/amadevice.png"/>
 <ol>
 	<li>Set "Video Capture Device" to "GV-USB2, Analog Capture" and make sure "Use Clock" is checked</li>
@@ -95,21 +95,21 @@
 	<li>Enter "Device Setting" and ensure "VID INPUT" is the same input as you set in Amarec</li>
 </ol>
 <img src="images/gv1.png"/>
-<h3>"Graph 2(Preview)" Tab</h3>
+<h3 id="AmarecPreviewTab">"Graph 2(Preview)" Tab</h3>
 <img src="images/amapreview.png"/>
 <ol>
 	<li>Set "Aspect Ratio" to 4:3 for most SD games (PS2/GCN and below are generally 4:3) or 16:9 if playing a newer game or playing a game with a 16:9 option enabled</li>
 	<li>Set "Deinterlacing" to "Top field first"</li>
 	<li>Set "Function" to "for Retro Game" for old (240p) games or "for Role-playing Game" for most newer/hi-res games (480i+)</li>
 </ol>
-<h3>"Graph 3(Live)" tab</h3>
+<h3 id="AmarecLiveTab">"Graph 3(Live)" tab</h3>
 <img src="images/amalive.png"/>
 <ol>
 	<li>Make sure "Live Enable" is checked</li>
 	<li>Set "Framerate" to "30fps" for 30fps games, or "60fps" for 60fps games</li>
 	<li>Set "Resize" to "640 * 480" for 4:3 games, or "720 * 480" for 16:9 games</li>
 </ol>
-<h3>"Recording" tab</h3>
+<h3 id="AmarecRecordingTab">"Recording" tab</h3>
 <img src="images/amarecording.png"/>
 <ol>
 	<li>Set "Framerate" to either 999 or 30 (Should result in 29.97fps recordings regardless)</li>
@@ -118,14 +118,14 @@
 	<li>Click "Update Codec List"</li>
 	<li>Select "LAGS Lagarith" from the list above</li>
 </ol>
-<h3>"Hotkey" tab</h3>
+<h3 id="AmarecHotkeyTab">"Hotkey" tab</h3>
 <p>Personally, I disable hot-keys so I don't accidentally stop a recording.</p>
 <img src="images/amahotkey.png"/>
 <ol><li>Disable "Use Hotkey" check-box</li>
 <li>You can finally exit the config by clicking "OK"</li>
 </ol>
 <p>Amarec has a lot of settings, but you should only have to configure it once thankfully.</p>
-<h1>Using AmarecTV with streaming software</h1>
+<h1 id="StreamingSetup">Using AmarecTV with streaming software</h1>
 <img src="images/obs1.png"/>
 <img src="images/obs2.png"/>
 <img src="images/obs3.png"/>
