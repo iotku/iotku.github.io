@@ -1,39 +1,56 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                                      
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>GV-USB2 English Setup Guide</title>
-</head>
-<style type="text/css">
-	body {
-		font-family: helvetica, sans-serif;
-		font-size: 1.1em;
 
-	}
-	img {
-		border: black 2px solid;
-	}
-	#container {
-		max-width: 850px;
-		margin-left: auto;
-		margin-right: auto;
-	}	
-	header {
-		width: 100%;
-		text-align: center;
-		background-color: black;
-		font-size: 1.5em;
-		color: white;
-	}
-	a,a:link,a:visited {
-		color: blue;
-		font-weight: bold;
-	}
-	header a,a:link,a:visited  {
-		color: orange;
-		font-weight: bold;
-	}
-</style>
+	<style type="text/css">
+		body {
+			font-family: helvetica, sans-serif;
+			font-size: 1.1em;
+
+		}
+		img {
+			border: black 2px solid;
+		}
+		#container {
+			max-width: 850px;
+			margin-left: auto;
+			margin-right: auto;
+		}	
+		header {
+			width: 100%;
+			text-align: center;
+			background-color: black;
+			font-size: 1.5em;
+			color: white;
+		}
+		a,a:link,a:visited {
+			color: blue;
+			font-weight: bold;
+		}
+		header a,a:link,a:visited  {
+			color: orange;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<!-- I'm writing this by hand, it's not going to be pretty. -->
+<!-- 
+██╗    ██╗██╗  ██╗ █████╗ ████████╗     █████╗ ██████╗ ███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗
+██║    ██║██║  ██║██╔══██╗╚══██╔══╝    ██╔══██╗██╔══██╗██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║
+██║ █╗ ██║███████║███████║   ██║       ███████║██████╔╝█████╗       ╚████╔╝ ██║   ██║██║   ██║
+██║███╗██║██╔══██║██╔══██║   ██║       ██╔══██║██╔══██╗██╔══╝        ╚██╔╝  ██║   ██║██║   ██║
+╚███╔███╔╝██║  ██║██║  ██║   ██║       ██║  ██║██║  ██║███████╗       ██║   ╚██████╔╝╚██████╔╝
+ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝       ╚═╝    ╚═════╝  ╚═════╝ 
+                                                                                              
+██╗      ██████╗  ██████╗ ██╗  ██╗██╗███╗   ██╗ ██████╗      █████╗ ████████╗██████╗
+██║     ██╔═══██╗██╔═══██╗██║ ██╔╝██║████╗  ██║██╔════╝     ██╔══██╗╚══██╔══╝╚════██╗
+██║     ██║   ██║██║   ██║█████╔╝ ██║██╔██╗ ██║██║  ███╗    ███████║   ██║     ▄███╔╝
+██║     ██║   ██║██║   ██║██╔═██╗ ██║██║╚██╗██║██║   ██║    ██╔══██║   ██║     ▀▀══╝
+███████╗╚██████╔╝╚██████╔╝██║  ██╗██║██║ ╚████║╚██████╔╝    ██║  ██║   ██║     ██╗
+╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝   ╚═╝     ╚═╝            
+-->
 <body>
 <header style="margin: 0; padding: 0; border: 0;">GV-USB2 English Setup Guide<br/>by <a href="http://twitter.com/iotku">@iotku</a> (Follow me on twitter it really helps me out.)</header>
 <div id="container">
@@ -63,7 +80,7 @@
 		<img src="images/dinstall.png"/>
 	</ol>
 <h2 id="InstallCodec">LAGS Codec Installation</h2>
-<p>Assuming you're going to record with AmarecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
+<p>Assuming you're going to record directly with AmarecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
 <p>LAGS is a lossless codec which means filesizes are a fairly large, make sure you have a lot of free storage space!</p>
 <p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
 <ol>
@@ -116,7 +133,13 @@
 <img src="images/amarecording.png"/>
 <ol>
 	<li>Set "Framerate" to either 999 or 30 (Should result in 29.97fps recordings regardless)</li>
-	<li>Set "Filter Processing" to "Filter Off"</li>
+	<li>For "Filter Processing" you have two main choices:
+		<ul>
+			<li>"Filter Off" results in recordings with the least amount of extra video processing. (No deinterlacing/Resizing/Cropping) <br><br>This is useful if you plan on doing a lot of post-processing; deinterlacing quality can be better in post-production and may be able to use methods not available in AmarecTV. </li><br>
+			<li>"Filter On" results in recordings after processing by AmarecTV, the video will look approximately the same as the Amarec preview window</li>
+		</ul>
+		<p><i>(A guide on encoding/some post processing recordings may come sometime in the future)</i></p>
+	</li>
 	<li>Set "Video Compressor" to "Other Codec"</li>
 	<li>Click "Update Codec List"</li>
 	<li>Select "LAGS Lagarith" from the list above</li>
