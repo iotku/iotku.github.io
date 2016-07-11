@@ -3,25 +3,42 @@
 <head>
 	<meta charset="utf-8" />
 	<title>GV-USB2 English Setup Guide</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: helvetica, sans-serif;
+			font-family: 'Roboto', helvetica, sans-serif;
 			font-size: 1.1em;
-
+			background-color: #222;
+			background: #9C9C9C; /* Old browsers */
+			background: -moz-linear-gradient(left, #1e1e1e 0%, #9c9c9c 50%, #1e1e1e 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, #1e1e1e 0%,#9c9c9c 50%,#1e1e1e 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, #1e1e1e 0%,#9c9c9c 50%,#1e1e1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#1e1e1e',GradientType=1 );
 		}
 		img {
 			border: black 2px solid;
 		}
+		h1 {
+			border-bottom: 2px solid silver;
+
+		}
 		#container {
-			max-width: 850px;
+			max-width: 860px;
 			margin-left: auto;
 			margin-right: auto;
+			padding: 10px;
+			background-color: rgba(25, 25, 25, 0.64);
+			color: white;
+			border-radius: 10px 10px 10px 10px;
+			-moz-border-radius: 10px 10px 10px 10px;
+			-webkit-border-radius: 10px 10px 10px 10px;
+			border: 0px solid #000000;
+			color: #E1E1E1;
 		}	
 		header {
 			width: 100%;
 			text-align: center;
-			background-color: black;
+			background-color: #333;
 			font-size: 1.5em;
 			color: white;
 		}
@@ -52,10 +69,10 @@
 ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝   ╚═╝     ╚═╝
 -->
 <body>
-<header style="margin: 0; padding: 0; border: 0;">GV-USB2 English Setup Guide<br/>by <a href="http://twitter.com/iotku">@iotku</a> (Follow me on twitter it really helps me out.)</header>
 <div id="container">
+<header style="margin: 0; padding: 0; border: 0;">GV-USB2 English Setup Guide by <a href="http://twitter.com/iotku">iotku</a><br /></header>
 <p>In this guide I'm going to show you how to setup drivers and AmarecTV for the GV-USB2 capture device.</p>
-<h2 id="DriverInstall">Driver Install</h2>
+<h1 id="DriverInstall">Driver Install</h1>
 <h3>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</h3>
 <p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
 
@@ -79,7 +96,7 @@
 		<li>Click "Next" and wait a little bit, and the drivers should be installed</li>
 		<img src="images/dinstall.png"/>
 	</ol>
-<h2 id="InstallCodec">LAGS Codec Installation</h2>
+<h1 id="InstallCodec">LAGS Codec Installation</h1>
 <p>Assuming you're going to record directly with AmarecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
 <p>LAGS is a lossless codec which means file sizes are a fairly large, make sure you have a lot of free storage space!</p>
 <p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
@@ -88,7 +105,7 @@
 	<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
 	<li>LAGS should be installed, you're done with this step.</li>
 </ol>
-<h2 id="AmarecSetup">AmarecTV Setup</h2>
+<h1 id="AmarecSetup">AmarecTV Setup</h1>
 <p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmarecTV's Live output for the ability to simultaneously stream and record lossless video via AmarecTV.</p>
 
 <ol>
@@ -153,7 +170,7 @@
 <li>You can finally exit the config by clicking "OK"</li>
 </ol>
 <p>Amarec has a lot of settings, but you should only have to configure it once thankfully.</p>
-<h1 id="StreamingSetup">Using Amarec Live streaming software</h1>
+<h1 id="StreamingSetup">Using Amarec Live with streaming software</h1>
 <p>While you can, in most cases, use window capture the Amarec preview there is an alternative to windows/screen capturing.</p>
 <p>By using Amarec's Live output you gain the ability to minimize the Amarec window, which can be useful especially on single monitor setups.</p>
 <img src="images/obs1.png"/>
