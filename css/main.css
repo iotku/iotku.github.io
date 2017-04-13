@@ -6,96 +6,30 @@
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#042f6a+0,091423+100 */
 	background: #042f6a;
-	font-family: 'Roboto', helvetica, sans-serif;
 	color: #EDEDED;
 }
 
 a:link {
 	color: white;
 }
+
 header {
-	font-family: arial;
-	padding-top: 10px;
-	padding-bottom: 7px;
-	padding-left: 10px;
 	background-color: #2B74D8;
 	color: white;
-	font-weight: bold;
-	font-size: 25px;
-	border-bottom: 3px white solid;
+	border-bottom: 1px white solid;
 }
 
 nav {
-	background-color: #042F6A;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	padding-left: 10px;
-	color: white;
+    width: 100%;
+    background-color: #333;
 }
 
-
-#container {
-	max-width: 1000px;
-	min-width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #091423;
-	border: 2px black solid;
-}
-
-
-h1,h2,h3 {
-	padding-left: 5px;
-	text-align: left;
-	font-weight: bolder;
-	color: white;
-}
-h1 {
-	font-size: 2em;
-	font-weight: bolder;
-	border-bottom: 2px solid white;
-	padding-bottom: 5px;
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-h3 {
-	font-size: 1.3em;
-	margin-bottom: 5px;
-}
-
-
-img {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
 
 a,a:link,a:visited {
-	color: white;
+	color: #CCC;
 	font-weight: bold;
 }
 
-ul {
-	list-style: square;
-}
+a:hover {color: white !important;}
 
-p {
-	padding-left: 5px;
-	font-size: 1.05em;
-	line-height: 20px;
-}
-
-li {
-	padding-left: 20px;
-	margin-bottom: 10px;
-}
-i {
-	font-style: italic;
-	color: #D7D7D7;
-}

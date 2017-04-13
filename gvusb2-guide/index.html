@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>GV-USB2 English Setup Guide</title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/foundation.css">
+   <link rel="stylesheet" type="text/css" href="../css/main.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <!-- I'm writing this by hand, it's not going to be pretty. -->
@@ -23,24 +24,28 @@
 ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝   ╚═╝     ╚═╝
 -->
 <body>
-<div id="container">
-	<header>GV-USB2 English Setup Guide by <a href="http://twitter.com/iotku">iotku</a></header>
+    <div class="row">
+        <header class="large-12 columns"><h1>GV-USB2 English Setup Guide by <a href="http://twitter.com/iotku">iotku</a></h1></header>
 	<nav><a href="/websplit">Websplit</a> :: <a href="/gvusb2-guide">GV-USB2 Guide</a> :: <a href="https://twitter.com/iotku">Social Media</a></nav>
-<p>In this guide I'm going to show you how to setup drivers and AmaRecTV for the GV-USB2 capture device.</p>
-<h1 id="DriverInstall">Driver Install</h1>
-<h2>Using the included CD</h2>
-<h3>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</h3>
-<p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
-
+    </div>
+    
+    <div class="row">
+    <h2 id="DriverInstall">Driver Install</h1>
+        <h3 class="subheader">Using the included CD</h2>
+        <p>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</p>
+    <p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
+    </div>
+    <div class="row">
 	<ul><li>1. Once we've loaded the CD (Auto-run or opened GVUSB2.exe manually), click the right of the 2 large blue buttons</li></ul>
 		<img alt="GV-USB2's CD Main Menu" src="images/cd01.png"/>
 	<ul><li>2. Now click the first blue button marked with a 1</li></ul>
 		<img alt="GV-USB2's CD Second Menu" src="images/cd02.png"/>
 	<ul><li>3. Click next a few times to get through the driver installation and you're done with this step!</li></ul>
 		<img alt="Driver Installation Window" src="images/dinstall.png"/>
-
-<h2>Downloading the drivers online</h2>
-<h3>If you don't have a CD (or disk drive) and need the drivers <a href="http://www.iodata.jp/lib/script/clib.php?code=gvusb2_110.exe">you can get them here.</a></h3>
+    </div>
+        <div class="row">
+<h3>Downloading the drivers online</h2>
+<h4 class="subheader">If you don't have a CD (or disk drive) and need the drivers <a href="http://www.iodata.jp/lib/script/clib.php?code=gvusb2_110.exe">you can get them here.</a></h3>
 
 	<img alt="GV-USB2 Driver Download Page" src="images/gvdownload.png"/>
 
@@ -54,6 +59,8 @@
 		<img alt="GV-USB2 Installation Selection Screen" src="images/gvusbexeinstall.png"/>
 		<ul><li>Click "Next" and wait a little bit, and the drivers should be installed</li></ul>
 		<img alt="Driver Installation Window" src="images/dinstall.png"/>
+        </div>
+        <div class="row">
 <h1 id="InstallCodec">LAGS Codec Installation</h1>
 <p>Assuming you're going to record directly with AmaRecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
 <p>LAGS is a lossless codec which means file sizes are a fairly large, make sure you have a lot of free storage space!</p>
@@ -63,6 +70,8 @@
 	<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
 	<li>LAGS should be installed, you're done with this step.</li>
 </ol>
+        </div>
+        <div class="row">
 <h1 id="AmaRecSetup">AmaRecTV Setup</h1>
 <p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmaRecTV's Live output for the ability to simultaneously stream and record lossless video via AmaRecTV.</p>
 
@@ -80,6 +89,8 @@
 	<li>Set "Path" to where you want your recordings to be saved to</li>
 	<li>Make sure "Language" is set to "English"
 </ol>
+        </div>
+        <div class="row">
 <h3 id="AmaRecDeviceTab">"Device" Tab</h3>
 <img alt="AmaRecTV Device Tab" src="images/amadevice.png"/>
 <ol>
@@ -89,6 +100,8 @@
 	<li>Set "Audio Capture Device" to "GV-USB2, Analog WaveIn"
 	<li>Enter "Device Setting" and ensure "VID INPUT" is the same input as you set in AmaRec</li>
 </ol>
+</div>
+ <div class="row">
 <img alt="GV-USB2 Custom Properties" src="images/gv1.png"/>
 <h3 id="AmaRecPreviewTab">"Graph 2(Preview)" Tab</h3>
 <img alt="AmaRecTV Preview Tab" src="images/amapreview.png"/>
@@ -97,6 +110,8 @@
 	<li>Set "Deinterlacing" to "Top field first"</li>
 	<li>Set "Function" to "for Retro Game" for old (240p) games or "for Role-playing Game" for most newer/hi-res games (480i+)</li>
 </ol>
+</div>
+<div class="row">
 <h3 id="AmaRecLiveTab">"Graph 3(Live)" tab</h3>
 <img alt="AmaRecTV Live Tab" src="images/amalive.png"/>
 <ol>
@@ -104,6 +119,8 @@
 	<li>Set "Framerate" to "30fps" for 30fps games, or "60fps" for 60fps games</li>
 	<li>Set "Resize" to "640 * 480" for 4:3 games, or "720 * 480" for 16:9 games</li>
 </ol>
+</div>
+<div class="row">
 <h3 id="AmaRecRecordingTab">"Recording" tab</h3>
 <img alt="AmaRecTV Recording Tab" src="images/amarecording.png"/>
 <ol>
@@ -119,6 +136,8 @@
 	<li>Click "Update Codec List"</li>
 	<li>Select "LAGS Lagarith" from the list above</li>
 </ol>
+</div>
+<div class="row">
 <h3 id="AmaRecHotkeyTab">"Hotkey" tab</h3>
 <p>Personally, I disable hot-keys so I don't accidentally stop a recording.</p>
 <img alt="AmaRecTV Hotkey Tab" src="images/amahotkey.png"/>
@@ -126,6 +145,7 @@
 <li>You can finally exit the config by clicking "OK"</li>
 </ol>
 <p>AmaRec has a lot of settings, but you should only have to configure it once thankfully.</p>
+<div class="row">
 <h1 id="StreamingSetup">Using AmaRec Live with streaming software</h1>
 <p>While you can, in most cases, use window capture the AmaRec preview there is an alternative to windows/screen capturing.</p>
 <p>By using AmaRec's Live output you gain the ability to minimize the AmaRec window, which can be useful especially on single monitor setups.</p>
@@ -139,6 +159,6 @@
 	<li>Select "AmaRec Audio Capture" as the audio device</li>
 </ol>
 </div>
-
+    </div>
 </body>
 </html>
