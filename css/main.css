@@ -33,3 +33,6 @@ a,a:link,a:visited {
 
 a:hover {color: white !important;}
 
+.row {
+    background-color: #222;
+}
