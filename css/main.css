@@ -42,7 +42,7 @@ a:hover {color: white !important;}
 
 img {
   max-width:50em;
-  max-height:100%;
+  max-height:auto;
   overflow-y: hidden;
   overflow-x: hidden;
 }
