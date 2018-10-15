@@ -41,6 +41,7 @@ a:hover {color: white !important;}
 }
 
 img {
+  width:100%;
   max-width:50em;
   max-height:auto;
   overflow-y: hidden;
