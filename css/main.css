@@ -2,7 +2,6 @@ h1,h2,h3,h4,h5,h6,body,#container {
   margin: 0;
 }
 
-
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#042f6a+0,091423+100 */
 	background: #042f6a;
@@ -25,7 +24,6 @@ nav {
     background-color: #333;
 }
 
-
 a,a:link,a:visited {
 	color: #CCC;
 	font-weight: bold;
@@ -43,12 +41,8 @@ a:hover {color: white !important;}
 }
 
 img {
-  margin-left: auto !important;
-  margin-right: auto !important;
   max-width:100%;
   max-height:100%;
-  background-size:100% 100%;
-  background-repeat:no-repeat;
   overflow-y: hidden;
   overflow-x: hidden;
-  }
+}
