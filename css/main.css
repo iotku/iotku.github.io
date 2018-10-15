@@ -1,4 +1,4 @@
-* {
+h1,h2,h3,h4,h5,h6,body,#container {
   margin: 0;
 }
 
@@ -7,6 +7,7 @@ body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#042f6a+0,091423+100 */
 	background: #042f6a;
 	color: #EDEDED;
+    font-size: 1.15em;
 }
 
 a:link {
@@ -20,7 +21,6 @@ header {
 }
 
 nav {
-	padding-left: 10px;
     width: 100%;
     background-color: #333;
 }
@@ -32,7 +32,23 @@ a,a:link,a:visited {
 }
 
 a:hover {color: white !important;}
-
-.row {
+#container {
     background-color: #222;
 }
+
+.row {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    max-width:50em;
+}
+
+img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width:100%;
+  max-height:100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
