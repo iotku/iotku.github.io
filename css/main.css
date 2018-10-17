@@ -31,6 +31,8 @@ a,a:link,a:visited {
 
 a:hover {color: white !important;}
 #container {
+    max-width: 100%;
+    margin: 0;
     background-color: #222;
 }
 
@@ -41,8 +43,10 @@ a:hover {color: white !important;}
 }
 
 img {
-  width:100%;
-  max-width:50em;
+  width:35em;
+  max-width: 100%;
+  margin: auto;
+  display:block;
   max-height:auto;
   overflow-y: hidden;
   overflow-x: hidden;
