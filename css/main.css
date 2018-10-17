@@ -14,6 +14,7 @@ a:link {
 }
 
 header {
+    font-size:0.8em;
 	background-color: #2B74D8;
 	color: white;
 	border-bottom: 1px white solid;
