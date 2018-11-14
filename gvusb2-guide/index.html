@@ -28,9 +28,9 @@
 	    <div id="container">
 	        <header><h1>GV-USB2 English Setup Guide by <a href="http://twitter.com/iotku">iotku</a></h1></header>
 		<nav><a href="/websplit">Websplit</a> :: <a href="/gvusb2-guide">GV-USB2 Guide</a> :: <a href="https://twitter.com/iotku">Social Media</a></nav>
-	    <div class="row">
 	    <h2 id="DriverInstall">Driver Install</h2>
 	        <h3 class="subheader">Using the included CD</h3>
+	    <div class="row">
 	        <p>If you're installing the drivers from the CD that comes with the GV-USB2 the installation is fairly simple.</p>
 	    <p>While it may be somewhat scary to see a bunch of Japanese you don't understand, the installation is only a few clicks.</p>
 	    </div>
@@ -42,25 +42,25 @@
 		<ul><li>3. Click next a few times to get through the driver installation and you're done with this step!</li></ul>
 			<img alt="Driver Installation Window" src="images/dinstall.png"/>
 	    </div>
-	        <div class="row">
-	<h3>Downloading the drivers online</h3>
-	<h4 class="subheader">If you don't have a CD (or disk drive) and need the drivers <a href="http://www.iodata.jp/lib/script/clib.php?code=gvusb2_110.exe">you can get them here.</a></h4>
-
+	<h2>Downloading the drivers online</h2>
+	    <h3 class="subheader">If you don't have a CD (or disk drive) and need the drivers <a href="http://www.iodata.jp/lib/script/clib.php?code=gvusb2_110.exe">you can get them here.</a></h3>
+	<div class="row">
 		<img alt="GV-USB2 Driver Download Page" src="images/gvdownload.png"/>
-
-		<ol>
+		
+        <ol>
 			<li>You will see a text box to the right of "S/N", this page asks you for your serial number of your device in order to download the drivers. The serial number should be printed on your GV-USB2.</li>
 			<li>Enter your Serial Number in the text field</li>
 			<li>Click the "ダウンロード" ("Download") button to download the driver "gvusb2_110.exe" and run it</li> 
 			<li>A new folder on your desktop will appear called "gvusb2_110", run "GVUSB2.exe" in that folder.</li>
 			<li>Click the first blue button, marked with a 1</li>
 		</ol>
-			<img alt="GV-USB2 Installation Selection Screen" src="images/gvusbexeinstall.png"/>
+	
+        <img alt="GV-USB2 Installation Selection Screen" src="images/gvusbexeinstall.png"/>
 			<ul><li>Click "Next" and wait a little bit, and the drivers should be installed</li></ul>
 			<img alt="Driver Installation Window" src="images/dinstall.png"/>
 	        </div>
-	        <div class="row">
 	<h1 id="InstallCodec">LAGS Codec Installation</h1>
+	        <div class="row">
 	<p>Assuming you're going to record directly with AmaRecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
 	<p>LAGS is a lossless codec which means file sizes are a fairly large, make sure you have a lot of free storage space!</p>
 	<p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
@@ -70,8 +70,8 @@
 		<li>LAGS should be installed, you're done with this step.</li>
 	</ol>
 	        </div>
-	        <div class="row">
 	<h1 id="AmaRecSetup">AmaRecTV Setup</h1>
+	<div class="row">
 	<p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmaRecTV's Live output for the ability to simultaneously stream and record lossless video via AmaRecTV.</p>
 
 		<ul><li>Download the <a href="http://www.amarectv.com/download_amarectv.htm">latest AmaRecTV</a> (Version 3.XX), click "ダウンロード" (<a href="http://www.amarectv.com/download/amarectv310.zip">Direct Link</a>)</li></ul>
@@ -82,15 +82,17 @@
 	<p>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</p>
 	<p>You should be greeted with a dialog asking you to change your settings.</p>
 	<i>If not, click the first button in the top left corner or right click in the preview area and click "Config"</i>
+    </div>
 	<h3 id="AmaRecGeneralTab">"General" Tab</h3>
-	<img alt="AmaRecTV General Tab" src="images/amageneral.png"/>
+    <div class="row">
+    <img alt="AmaRecTV General Tab" src="images/amageneral.png"/>
 	<ol>
 		<li>Set "Path" to where you want your recordings to be saved to</li>
 		<li>Make sure "Language" is set to "English"
 	</ol>
 	        </div>
-	        <div class="row">
 	<h3 id="AmaRecDeviceTab">"Device" Tab</h3>
+	<div class="row">
 	<img alt="AmaRecTV Device Tab" src="images/amadevice.png"/>
 	<ol>
 		<li>Set "Video Capture Device" to "GV-USB2, Analog Capture" and make sure "Use Clock" is checked</li>
@@ -144,8 +146,9 @@
 	<li>You can finally exit the config by clicking "OK"</li>
 	</ol>
 	<p>AmaRec has a lot of settings, but you should only have to configure it once thankfully.</p>
-	<div class="row">
+    </div>
 	<h1 id="StreamingSetup">Using AmaRec Live with streaming software</h1>
+	<div class="row">
 	<p>While you can, in most cases, use window capture the AmaRec preview there is an alternative to windows/screen capturing.</p>
 	<p>By using AmaRec's Live output you gain the ability to minimize the AmaRec window, which can be useful especially on single monitor setups.</p>
 	<p><i>Note that AmaRec's live output only works with 32Bit software, to use it with OBS you need to be running the 32bit version.</i></p>
@@ -159,6 +162,5 @@
 	</ol>
 	</div>
     </div>
-	    </div>
 	</body>
 </html>
