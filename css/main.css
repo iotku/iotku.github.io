@@ -7,7 +7,7 @@ h1,h2 {
     border-right: none;
     border-bottom: solid 2px white;
     background-color: blue;
-    text-align: center;
+    text-align: left;
     width: 100%;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
 background: -moz-linear-gradient(left, blue) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
