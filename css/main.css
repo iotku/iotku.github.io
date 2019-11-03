@@ -81,6 +81,7 @@ a:hover {color: white !important;}
     border-right: 1px solid #d9d9d9;
     min-width: 200px;;
     max-width: 270px;
+    overflow-y: auto;
 }
 
 #side-nav ul {
@@ -116,4 +117,13 @@ img {
   max-height:auto;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+
+/* Disable Sidebar Navigation if screen width too small to be useful */
+@media (max-width: 480px) {
+    #side-nav   {
+        display:none;
+        transition: all .3s;
+    }
 }
