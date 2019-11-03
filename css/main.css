@@ -7,7 +7,7 @@ h1,h2 {
     border-right: none;
     border-bottom: solid 2px white;
     background-color: blue;
-    text-align: left;
+    text-align: center;
     width: 100%;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
 background: -moz-linear-gradient(left, blue) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -16,32 +16,41 @@ background: linear-gradient(to right, blue 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */    
 }
 
+h3 {
+    padding-left: .5em;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border: black 2px solid;
+    background-color: #333;
+}
+
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#042f6a+0,091423+100 */
 	background: #042f6a;
 	color: #EDEDED;
     font-size: 1.15em;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 a:link {
 	color: white;
 }
 
-header {
-    font-size:0.8em;
-	background-color: #2B74D8;
-	color: white;
-	border-bottom: 1px white solid;
+.main-header {
+    background: #0596d8;
+    padding: 10px;
+    box-shadow: 1px 2px 3px #ccc;
+    color: white;
+    /* display: flex; */
+    display: inline-flex;
+    flex-flow: row nowrap;
 }
 
-header h1 {
-    background-color: #2B74D8;
-}
-
-nav {
-    width: 100%;
-    background-color: #333;
+.main-header-content {
+    flex: 1 0 auto;
 }
 
 a,a:link,a:visited {
@@ -50,21 +59,58 @@ a,a:link,a:visited {
 }
 
 a:hover {color: white !important;}
+
+#weird-flex-but-ok {
+    display: flex;
+    flex-direction: row;
+    /* margin: auto -1rem 1rem; */
+    
+    height:100vh;
+    min-height: min-content;
+}
+
 #container {
-    max-width: 100%;
-    margin: 0;
     background-color: #222;
+    overflow-y: auto;
 }
 
-.row {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    max-width:50em;
+
+#side-nav {
+    background: #111;
+    order: 0;
+    border-right: 1px solid #d9d9d9;
+    min-width: 200px;;
+    max-width: 270px;
 }
 
+#side-nav ul {
+    text-align: right;
+    width:100%;
+    padding:0;
+    margin-top:0px;
+}
+
+#side-nav li {
+    background-color: #222;
+    border-bottom: 1px black;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    list-style: none;
+    transition: all .3s;
+    padding-right: 0.5em;
+}
+
+#side-nav li:hover {
+    background-color: black;
+}
+
+section p {
+    padding-left: 0.5em;
+}
 img {
-  width:35em;
-  max-width: 100%;
+  width:30em;
+  flex-direction: column;
+  max-width: 95%;
   margin: auto;
   display:block;
   max-height:auto;
