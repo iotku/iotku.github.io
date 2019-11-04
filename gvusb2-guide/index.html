@@ -26,7 +26,6 @@
 ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝   ╚═╝     ╚═╝
 -->
 	<body>
-
 		<div id="weird-flex-but-ok">
 			<nav id="side-nav">
 				<h1>Navigation</h1>
@@ -37,16 +36,17 @@
 						<li><a href="#s-amarec-setup">Amarec Setup</a></li>
 						<li><a href="#s-stream-setup">OBS Setup</a></li>
 					</ul>
-				</nav>
+			</nav>
+			
 			<div id="container">  
-					<header class="page-header">
-							<div class="page-header-content">
-								<h1>GV-USB2 English Setup Guide by <a href="https://twitter.com/iotku">iotku</a></h1> 
-							</div>
-					</header>
+				<header class="page-header">
+						<div class="page-header-content">
+							<h1>GV-USB2 English Setup Guide by <a href="https://twitter.com/iotku">iotku</a></h1> 
+						</div>
+				</header>
+
 				<section id="s-download-drivers">
 					<h2>Downloading the drivers online</h2>
-					<h3>2019 Update: (New ver 1.11 available)</h3>
 						<h3 class="subheader"><big><a href="http://lib.iodata.jp/lib/script/clib.php?code=gvusb2_111.exe">Drivers download link from OEM here.</a></big></h3>
 						<img alt="GV-USB2 Driver Download Page" src="images/gvdownload.png"/>
 						
@@ -61,114 +61,114 @@
 						<img alt="GV-USB2 Installation Selection Screen" src="images/gvusbexeinstall.png"/>
 							<ul><li>Click "Next" and wait a little bit, and the drivers should be installed</li></ul>
 							<img alt="Driver Installation Window" src="images/dinstall.png"/>
-			</section>
+				</section>
 
-			<section id="s-driver-install">
-				<h2>Driver Install</h2>
-					<h3 class="subheader">Using the included CD</h3>
-					<h3>2019 Update: CD Drivers are probably the older 1.10 version which may work fine however you may wish to download 1.11 from the link above.</h3>
-				<ul><li>1. Once we've loaded the CD (Auto-run or opened GVUSB2.exe manually), click the right of the 2 large blue buttons</li></ul>
-					<img alt="GV-USB2's CD Main Menu" src="images/cd01.png"/>
-				<ul><li>2. Now click the first blue button marked with a 1</li></ul>
-					<img alt="GV-USB2's CD Second Menu" src="images/cd02.png"/>
-				<ul><li>3. Click next a few times to get through the driver installation and you're done with this step!</li></ul>
-					<img alt="Driver Installation Window" src="images/dinstall.png"/>
-			</section>
+				<section id="s-driver-install">
+					<h2>Driver Install</h2>
+						<h3 class="subheader">Using the included CD</h3>
+					<ul><li>1. Once we've loaded the CD (Auto-run or opened GVUSB2.exe manually), click the right of the 2 large blue buttons</li></ul>
+						<img alt="GV-USB2's CD Main Menu" src="images/cd01.png"/>
+					<ul><li>2. Now click the first blue button marked with a 1</li></ul>
+						<img alt="GV-USB2's CD Second Menu" src="images/cd02.png"/>
+					<ul><li>3. Click next a few times to get through the driver installation and you're done with this step!</li></ul>
+						<img alt="Driver Installation Window" src="images/dinstall.png"/>
+				</section>
 
-			<section id="s-codec-install">
-				<h1>LAGS Codec Installation</h1>
-				<p>Assuming you're going to record directly with AmaRecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
-				<p>LAGS is a lossless codec which means file sizes are a fairly large, make sure you have a lot of free storage space!</p>
-				<p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
-				<ol>
-					<li>Download the <a href="http://lags.leetcode.net/codec.html">latest Lagarith Lossless Codec.</a> (<a href="http://lags.leetcode.net/LagarithSetup_1327.exe">Direct Link</a>)</li>
-					<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
-					<li>LAGS should be installed, you're done with this step.</li>
-				</ol>
-			</section>
+				<section id="s-codec-install">
+					<h1>LAGS Codec Installation</h1>
+					<p>Assuming you're going to record directly with AmaRecTV you're going to want LAGS installed so your recordings won't have the "AMV" watermark.</p>
+					<p>LAGS is a lossless codec which means file sizes are a fairly large, make sure you have a lot of free storage space!</p>
+					<p>If you're not planning on recording you can skip this step, but it's probably a good idea to do just in-case you ever want to.</p>
+					<ol>
+						<li>Download the <a href="http://lags.leetcode.net/codec.html">latest Lagarith Lossless Codec.</a> (<a href="http://lags.leetcode.net/LagarithSetup_1327.exe">Direct Link</a>)</li>
+						<li>Run "LagarithSetup_1327.exe" and follow the instructions (Just click next).</li>
+						<li>LAGS should be installed, you're done with this step.</li>
+					</ol>
+				</section>
 
-			<section id="s-amarec-setup">
-				<h1>AmaRecTV Setup</h1>
-				<p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmaRecTV's Live output for the ability to simultaneously stream and record lossless video via AmaRecTV.</p>
+				<section id="s-amarec-setup">
+					<h1>AmaRecTV Setup</h1>
+					<p>The GV-USB2 can be used directly with streaming software such as OBS, XSplit, and many Video editing applications (such as VirtualDub), however I recommend using AmaRecTV's Live output for the ability to simultaneously stream and record lossless video via AmaRecTV.</p>
 
-					<ul><li>Download the <a href="http://www.amarectv.com/download_amarectv.htm">latest AmaRecTV</a> (Version 3.XX), click "ダウンロード" (<a href="http://www.amarectv.com/download/amarectv310.zip">Direct Link</a>)</li></ul>
-					<p><b><i>Make sure not to download Version 4.XX as it currently only works on Windows 8 and has different menus than this guide.</i></b></p>
-					<ul><li>Unzip the folder to location of your choosing.</li></ul>
-					<ul><li>Run "live_setup300.exe" from the folder you unzipped.</li></ul>
-					<p><i>Text May be Garbled if you're not using the Japanese Locale, but should install just fine. Just press the selected button (with the > at the end of it) a few times.</i></p>
-				<p>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</p>
-				<p>You should be greeted with a dialog asking you to change your settings.</p>
-				<p><i>If not, click the first button in the top left corner or right click in the preview area and click "Config"</i></p>
-				<h3 id="AmaRecGeneralTab">"General" Tab</h3>
-				<img alt="AmaRecTV General Tab" src="images/amageneral.png"/>
-				<ol>
-					<li>Set "Path" to where you want your recordings to be saved to</li>
-					<li>Make sure "Language" is set to "English"
-				</ol>
-				<h3 id="AmaRecDeviceTab">"Device" Tab</h3>
-				<img alt="AmaRecTV Device Tab" src="images/amadevice.png"/>
-				<ol>
-					<li>Set "Video Capture Device" to "GV-USB2, Analog Capture" and make sure "Use Clock" is checked</li>
-					<li>Set "Input" to either "Composite" or "S-Video" (Depending on what input you're using)</li>
-					<li>Set "Format" to "*w= 720, h= 480, fps=29.97,  fcc=YUY2, bit=16" (We're going to be setting the aspect ratio later and in post production for recordings)</li>
-					<li>Set "Audio Capture Device" to "GV-USB2, Analog WaveIn"
-					<li>Enter "Device Setting" and ensure "VID INPUT" is the same input as you set in AmaRec</li>
-				</ol>
-				<img alt="GV-USB2 Custom Properties" src="images/gv1.png"/>
-				<h3 id="AmaRecPreviewTab">"Graph 2(Preview)" Tab</h3>
-				<img alt="AmaRecTV Preview Tab" src="images/amapreview.png"/>
-				<ol>
-					<li>Set "Aspect Ratio" to 4:3 for most SD games (PS2/GCN and below are generally 4:3) or 16:9 if playing a newer game or playing a game with a 16:9 option enabled</li>
-					<li>Set "Deinterlacing" to "Top field first"</li>
-					<li>Set "Function" to "for Retro Game" for old (240p) games or "for Role-playing Game" for most newer/hi-res games (480i+)</li>
-				</ol>
-				<h3 id="AmaRecLiveTab">"Graph 3(Live)" tab</h3>
-				<img alt="AmaRecTV Live Tab" src="images/amalive.png"/>
-				<ol>
-					<li>Make sure "Live Enable" is checked</li>
-					<li>Set "Framerate" to "30fps" for 30fps games, or "60fps" for 60fps games</li>
-					<li>Set "Resize" to "640 * 480" for 4:3 games, or "720 * 480" for 16:9 games</li>
-				</ol>
-				<h3 id="AmaRecRecordingTab">"Recording" tab</h3>
-				<img alt="AmaRecTV Recording Tab" src="images/amarecording.png"/>
-				<ol>
-					<li>Set "Framerate" to either 999 or 30 (Should result in 29.97fps recordings regardless)</li>
-					<li>For "Filter Processing" you have two choices:
-						<ul>
-							<li>"Filter Off" results in recordings with the least amount of extra video processing. (No deinterlacing/Resizing/Cropping) This is useful if you plan on doing a lot of post-processing; deinterlacing quality can be better in post-production and may be able to use methods not available in AmaRecTV. </li>
-							<li>"Filter On" results in recordings after processing by AmaRecTV, the video will look approximately the same as the AmaRec preview window</li>
-						</ul>
-						<p><i>(A guide on encoding/some post processing recordings may come sometime in the future)</i></p>
-					</li>
-					<li>Set "Video Compressor" to "Other Codec"</li>
-					<li>Click "Update Codec List"</li>
-					<li>Select "LAGS Lagarith" from the list above</li>
-				</ol>
-				<h3 id="AmaRecHotkeyTab">"Hotkey" tab</h3>
-				<p>Personally, I disable hot-keys so I don't accidentally stop a recording.</p>
-				<img alt="AmaRecTV Hotkey Tab" src="images/amahotkey.png"/>
-				<ol><li>Disable "Use Hotkey" check-box</li>
-				<li>You can finally exit the config by clicking "OK"</li>
-				</ol>
-				<p>AmaRec has a lot of settings, but you should only have to configure it once thankfully.</p>
-			</section>
+						<ul><li>Download the <a href="http://www.amarectv.com/download_amarectv.htm">latest AmaRecTV</a> (Version 3.XX), click "ダウンロード" (<a href="http://www.amarectv.com/download/amarectv310.zip">Direct Link</a>)</li></ul>
+						<p><b><i>Make sure not to download Version 4.XX as it currently only works on Windows 8 and has different menus than this guide.</i></b></p>
+						<ul><li>Unzip the folder to location of your choosing.</li></ul>
+						<ul><li>Run "live_setup300.exe" from the folder you unzipped.</li></ul>
+						<p><i>Text May be Garbled if you're not using the Japanese Locale, but should install just fine. Just press the selected button (with the > at the end of it) a few times.</i></p>
+					<p>Run AmaRecTV (AmaRecTV in the same folder you unzipped)</p>
+					<p>You should be greeted with a dialog asking you to change your settings.</p>
+					<p><i>If not, click the first button in the top left corner or right click in the preview area and click "Config"</i></p>
+					<h3 id="AmaRecGeneralTab">"General" Tab</h3>
+					<img alt="AmaRecTV General Tab" src="images/amageneral.png"/>
+					<ol>
+						<li>Set "Path" to where you want your recordings to be saved to</li>
+						<li>Make sure "Language" is set to "English"
+					</ol>
+					<h3 id="AmaRecDeviceTab">"Device" Tab</h3>
+					<img alt="AmaRecTV Device Tab" src="images/amadevice.png"/>
+					<ol>
+						<li>Set "Video Capture Device" to "GV-USB2, Analog Capture" and make sure "Use Clock" is checked</li>
+						<li>Set "Input" to either "Composite" or "S-Video" (Depending on what input you're using)</li>
+						<li>Set "Format" to "*w= 720, h= 480, fps=29.97,  fcc=YUY2, bit=16" (We're going to be setting the aspect ratio later and in post production for recordings)</li>
+						<li>Set "Audio Capture Device" to "GV-USB2, Analog WaveIn"
+						<li>Enter "Device Setting" and ensure "VID INPUT" is the same input as you set in AmaRec</li>
+					</ol>
+					<img alt="GV-USB2 Custom Properties" src="images/gv1.png"/>
+					<h3 id="AmaRecPreviewTab">"Graph 2(Preview)" Tab</h3>
+					<img alt="AmaRecTV Preview Tab" src="images/amapreview.png"/>
+					<ol>
+						<li>Set "Aspect Ratio" to 4:3 for most SD games (PS2/GCN and below are generally 4:3) or 16:9 if playing a newer game or playing a game with a 16:9 option enabled</li>
+						<li>Set "Deinterlacing" to "Top field first"</li>
+						<li>Set "Function" to "for Retro Game" for old (240p) games or "for Role-playing Game" for most newer/hi-res games (480i+)</li>
+					</ol>
+					<h3 id="AmaRecLiveTab">"Graph 3(Live)" tab</h3>
+					<img alt="AmaRecTV Live Tab" src="images/amalive.png"/>
+					<ol>
+						<li>Make sure "Live Enable" is checked</li>
+						<li>Set "Framerate" to "30fps" for 30fps games, or "60fps" for 60fps games</li>
+						<li>Set "Resize" to "640 * 480" for 4:3 games, or "720 * 480" for 16:9 games</li>
+					</ol>
+					<h3 id="AmaRecRecordingTab">"Recording" tab</h3>
+					<img alt="AmaRecTV Recording Tab" src="images/amarecording.png"/>
+					<ol>
+						<li>Set "Framerate" to either 999 or 30 (Should result in 29.97fps recordings regardless)</li>
+						<li>For "Filter Processing" you have two choices:
+							<ul>
+								<li>"Filter Off" results in recordings with the least amount of extra video processing. (No deinterlacing/Resizing/Cropping) This is useful if you plan on doing a lot of post-processing; deinterlacing quality can be better in post-production and may be able to use methods not available in AmaRecTV. </li>
+								<li>"Filter On" results in recordings after processing by AmaRecTV, the video will look approximately the same as the AmaRec preview window</li>
+							</ul>
+							<p><i>(A guide on encoding/some post processing recordings may come sometime in the future)</i></p>
+						</li>
+						<li>Set "Video Compressor" to "Other Codec"</li>
+						<li>Click "Update Codec List"</li>
+						<li>Select "LAGS Lagarith" from the list above</li>
+					</ol>
+					<h3 id="AmaRecHotkeyTab">"Hotkey" tab</h3>
+					<p>Personally, I disable hot-keys so I don't accidentally stop a recording.</p>
+					<img alt="AmaRecTV Hotkey Tab" src="images/amahotkey.png"/>
+					<ol><li>Disable "Use Hotkey" check-box</li>
+					<li>You can finally exit the config by clicking "OK"</li>
+					</ol>
+					<p>AmaRec has a lot of settings, but you should only have to configure it once thankfully.</p>
+				</section>
 
-			<section id="s-stream-setup">
-				<h1 id="StreamingSetup">Using AmaRec Live with streaming software</h1>
-				<p>While you can, in most cases, use window capture the AmaRec preview there is an alternative to windows/screen capturing.</p>
-				<p>By using AmaRec's Live output you gain the ability to minimize the AmaRec window, which can be useful especially on single monitor setups.</p>
-				<p><i>Note that AmaRec's live output only works with 32Bit software, to use it with OBS you need to be running the 32bit version.</i></p>
-				<img alt="OBS Setup 1" src="images/obs1.png"/>
-				<img alt="OBS Setup 2" src="images/obs2.png"/>
-				<img alt="OBS Setup 3" src="images/obs3.png"/>
-				<img alt="OBS Setup 4" src="images/obs5.png"/>
-				<ol><li>Create a Video Capture Source ("Video Capture Device" in OBS)</li>
-					<li>Select "AmaRec Video Capture"</li>
-					<li>Select "AmaRec Audio Capture" as the audio device</li>
-				</ol>
-			</section>
-			<hr /> <!-- css hack to push scrolling past bottom -->
+				<section id="s-stream-setup">
+					<h1 id="StreamingSetup">Using AmaRec Live with streaming software</h1>
+					<p>While you can, in most cases, use window capture the AmaRec preview there is an alternative to windows/screen capturing.</p>
+					<p>By using AmaRec's Live output you gain the ability to minimize the AmaRec window, which can be useful especially on single monitor setups.</p>
+					<p><i>Note that AmaRec's live output only works with 32Bit software, to use it with OBS you need to be running the 32bit version.</i></p>
+					<img alt="OBS Setup 1" src="images/obs1.png"/>
+					<img alt="OBS Setup 2" src="images/obs2.png"/>
+					<img alt="OBS Setup 3" src="images/obs3.png"/>
+					<img alt="OBS Setup 4" src="images/obs5.png"/>
+					<ol>
+						<li>Create a Video Capture Source ("Video Capture Device" in OBS)</li>
+						<li>Select "AmaRec Video Capture"</li>
+						<li>Select "AmaRec Audio Capture" as the audio device</li>
+					</ol>
+				</section>
+				<hr /> <!-- css hack to push scrolling past bottom -->
+			</div>
 		</div>
-	</div>
 	</body>
 </html>
