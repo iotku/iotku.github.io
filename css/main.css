@@ -132,7 +132,7 @@ img {
 
 
 /* Disable Sidebar Navigation if screen width too small to be useful */
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     #side-nav   {
         display:none;
         transition: all .3s;
