@@ -27,7 +27,7 @@ h3 {
 
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#042f6a+0,091423+100 */
-	background: #042f6a;
+	background: #111;
 	color: #EDEDED;
     font-size: 1.15em;
     font-family: 'Roboto', sans-serif;
@@ -64,6 +64,8 @@ a:hover {color: white !important;}
     display: flex;
     flex-direction: row;
     /* margin: auto -1rem 1rem; */
+    max-width: 135vh;
+    margin: auto;
     
     height:100vh;
     min-height: min-content;
@@ -114,6 +116,11 @@ a:hover {color: white !important;}
     background-color: black;
 }
 
+section {
+	padding-left: 5%;
+	padding-right:5%;
+}
+
 section p {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -123,7 +130,7 @@ img {
   width:30em;
   flex-direction: column;
   max-width: 95%;
-  margin: auto;
+/*  margin: auto;*/
   display:block;
   max-height:auto;
   overflow-y: hidden;
@@ -135,6 +142,12 @@ img {
 @media (max-width: 650px) {
     #side-nav   {
         display:none;
-        transition: all .3s;
     }
+    section {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	img {
+		margin:auto;
+	}
 }
