@@ -64,7 +64,7 @@ a:hover {color: white !important;}
     display: flex;
     flex-direction: row;
     /* margin: auto -1rem 1rem; */
-    max-width: 135vw;
+    max-width: 80vw;
     margin: auto;
     height:100vh;
     min-height: min-content;
@@ -137,13 +137,16 @@ img {
 
 
 /* Disable Sidebar Navigation if screen width too small to be useful */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    #weird-flex-but-ok {
+        max-width: 100vw;
+    }
     #side-nav   {
         display:none;
     }
     section {
-		padding-left: 0%;
-		padding-right: 0%;
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 	img {
 		margin:auto;
